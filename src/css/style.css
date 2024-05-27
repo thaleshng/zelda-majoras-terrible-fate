@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
+    font-family: 'Triforce', sans-serif;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+body .bg-video {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: -1;
+}
+
+body .bg-video video {
+    height: 100vh;
+}
+
+main {
+    height: 100vh;
+    min-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 40px;
+}
+
+main .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+main .header a img {
+    height: 70px;
+    transition: 0.3s ease-in-out;
+}
+
+main .header a:hover img {
+    transform: scale(1.07);
+}
+
+main .header .menu .menu-options {
+    display: flex;
+}
+
+main .header .menu .menu-options li a {
+    color: #FFF;
+    font-size: 30px;
+    padding: 10px 20px;
+    color: #C71A29;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+main .header .menu .menu-options li a:hover {
+    background-color: #FFF;
+}
+
+main .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main .hero .general-infos {
+    max-width: 430px;
+}
+
+main .hero .general-infos .title {
+    font-size: 25px;
+    font-weight: 200;
+    position: relative;
+    right: -100px;
+    top: 10px;
+    color: #C71A29;
+}
+
+main .hero .general-infos span {
+    font-size: 120px;
+    color: #C71A29;
+
+}
+
+main .hero .general-infos .description {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+main .hero .general-infos .trailer-button {
+    font-family: 'Triforce', sans-serif;
+    font-size: 25px;
+    color: #C71A29;
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+main .hero .general-infos .trailer-button:hover {
+    transform: scale(1.07);
+}
+
+main .modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(52, 52, 50, 0.749);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+}
+
+main .modal.opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+main .modal .container-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+main .modal .container-modal .close-modal {
+    background-color: #FFF;
+    color: #C71A29;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 7px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
