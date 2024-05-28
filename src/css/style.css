@@ -22,7 +22,7 @@ body .bg-video video {
 
 main {
     height: 100vh;
-    min-width: 1440px;
+    width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

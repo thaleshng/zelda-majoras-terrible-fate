@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+    body::before {
+        content: "";
+        background: url("../assets/bg-mobile.jpg") center no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        opacity: 0.2;
+    }
+    
+    body .bg-video {
+        display: none;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    main .hero img {
+        width: 430px;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 15px;
+        gap: 40px;
+    }
+
+    main .hero {
+        flex-direction: column;
+    }
+
+    main .hero .general-infos {
+        text-align: center;
+    }
+
+    main .hero .general-infos .title {
+        right: -35px;
+    }
+
+    main .hero img {
+        width: 400px;
+    }
+
+    main .modal #video {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 399px) {
+    main .hero img {
+        width: 350px;
+    }
+
+    main .modal #video {
+        width: 350px;
+        height: 196px;
+    }
+}
+
+@media (max-width: 320px) {
+    main .hero img {
+        width: 300px;
+    }
+
+    main .modal #video {
+        width: 300px;
+        height: 168px;
+    }
+}
